@@ -39,9 +39,14 @@
 
 ---
 
-## 📁 Repository Structure
----text
+## 📁 폴더 구성  
+---
 Tableau_Study/
-- dashboards/        # Tableau .twb / .twbx 파일
-- images/            # 대표 대시보드 캡처 이미지
-- README.md
+- `dashboards/ `      # Tableau .twb / .twbx 파일
+- `images/ `          # 대표 대시보드 캡처 이미지
+- `README.md` 
+
+---
+
+본 레포지토리는 Tableau 숙련도를 높이기 위해  
+다양한 형태의 대시보드를 직접 설계·제작하며 정리한 학습 공간입니다.
