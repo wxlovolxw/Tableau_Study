@@ -16,16 +16,13 @@
 ### ▶ 호텔 예약 트렌드 분석 예시
 ![Dashboard Example 1](images/ex1_1pg.PNG)
 
-### ▶ 지점·채널·가격 기반 예약 인사이트
-![Dashboard Example 2](images/ex2_1pg.PNG)
-
 ### ▶ 홈쇼핑 KPI 및 판매 분석
 ![Dashboard Example 3](images/ex3_1pg.PNG)
 
 ### ▶ 방문객 유형·지역 기반 분석
 ![Dashboard Example 4](images/ex4_1pg.PNG)
 
-### ▶ 지역별 매출 및 성별 매출 분석
+### ▶ 지역별 수거함 및 만족도 분석
 ![Dashboard Example 5](images/ex5_1pg.PNG)
 
 ---
