@@ -1,0 +1,2420 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <ParameterDefaultValues />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='all'>
+      <format attr='color' value='#666666' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='기준일자' datatype='date' default-format='*yyyy년 mm월' name='[매개 변수 1]' param-domain-type='list' role='measure' source-field='[federated.0242g2y10kyl6v106x8110awuzvm].[년월]' type='quantitative' value='#2024-07-31#'>
+        <calculation class='tableau' formula='#2024-07-31#' />
+      </column>
+    </datasource>
+    <datasource caption='그랜드코리아레저 입장객수(그랜드코리아레저_입장객수)' inline='true' name='federated.0242g2y10kyl6v106x8110awuzvm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='그랜드코리아레저_입장객수' name='excel-direct.1y8nn781dbmf7b1c0b32d0j1sofl'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/LG1/Desktop/work/300. 개인사업/201. 2024 경영정보시각화능력 실기(진행중)/500. 모의고사 출제/모의고사 1회/소스/문제2,3_데이터/그랜드코리아레저_입장객수.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1y8nn781dbmf7b1c0b32d0j1sofl' name='그랜드코리아레저 입장객수' table='[&apos;그랜드코리아레저 입장객수$&apos;]' type='table'>
+          <columns gridOrigin='A1:P789:no:A1:P789:0' header='yes' outcome='6'>
+            <column datatype='date' name='년월' ordinal='0' />
+            <column datatype='string' name='영업장' ordinal='1' />
+            <column datatype='string' name='방문고객구분' ordinal='2' />
+            <column datatype='integer' name='일본' ordinal='3' />
+            <column datatype='integer' name='중국' ordinal='4' />
+            <column datatype='integer' name='홍콩' ordinal='5' />
+            <column datatype='integer' name='대만' ordinal='6' />
+            <column datatype='integer' name='동남아' ordinal='7' />
+            <column datatype='integer' name='로컬' ordinal='8' />
+            <column datatype='integer' name='러시아' ordinal='9' />
+            <column datatype='integer' name='미국' ordinal='10' />
+            <column datatype='integer' name='베트남' ordinal='11' />
+            <column datatype='integer' name='태국' ordinal='12' />
+            <column datatype='integer' name='몽골' ordinal='13' />
+            <column datatype='integer' name='필리핀' ordinal='14' />
+            <column datatype='integer' name='기타' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P789:no:A1:P789:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>년월</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[년월]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>년월</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영업장</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[영업장]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>영업장</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>방문고객구분</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[방문고객구분]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>방문고객구분</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>일본</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[일본]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>일본</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>중국</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[중국]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>중국</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>홍콩</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[홍콩]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>홍콩</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>대만</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[대만]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>대만</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>동남아</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[동남아]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>동남아</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>로컬</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[로컬]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>로컬</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>러시아</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[러시아]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>러시아</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>미국</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[미국]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>미국</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>베트남</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[베트남]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>베트남</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>태국</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[태국]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>태국</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>몽골</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[몽골]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>몽골</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>필리핀</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[필리핀]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>필리핀</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기타</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[기타]</local-name>
+            <parent-name>[그랜드코리아레저 입장객수]</parent-name>
+            <remote-alias>기타</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='방문월' datatype='string' name='[Calculation_859343105061302276]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR(DATEPART(&apos;month&apos;,[년월])) + &apos;월&apos;' />
+      </column>
+      <column caption='총_입장객_수' datatype='integer' name='[Calculation_859343105063391237]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[기타]+[대만]+[동남아]+[러시아]+[로컬]+[몽골]+[미국]+[베트남]+[일본]+[중국]+[태국]+[필리핀]+[홍콩]' />
+      </column>
+      <column caption='총_입장객_수(워터폴)' datatype='integer' name='[Calculation_859343105064206342]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='-[Calculation_859343105063391237]' />
+      </column>
+      <column caption='당월' datatype='boolean' name='[Calculation_859343105067462663]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[매개 변수 1] = [년월]' />
+      </column>
+      <column caption='최근_1년' datatype='boolean' name='[Calculation_859343105067540488]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATEADD(&apos;year&apos;,-1,[Parameters].[매개 변수 1]) &lt;= [년월] AND [년월] &lt;= [Parameters].[매개 변수 1]' />
+      </column>
+      <column caption='지역' datatype='string' name='[Calculation_859343105071996937]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='LEFT([영업장],2)' />
+      </column>
+      <column caption='그랜드코리아레저 입장객수' datatype='table' name='[__tableau_internal_object_id__].[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]' role='measure' type='quantitative' />
+      <column datatype='string' name='[방문고객구분]' role='dimension' type='nominal' />
+      <column datatype='string' name='[영업장]' role='dimension' type='nominal' />
+      <column-instance column='[방문고객구분]' derivation='None' name='[none:방문고객구분:nk]' pivot='key' type='nominal' />
+      <column-instance column='[영업장]' derivation='None' name='[none:영업장:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0jaxonk033zr6n1clikcx1aj10yv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/04/2025 05:27:05 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>년월</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[년월]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>년월</remote-alias>
+              <ordinal>0</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>영업장</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[영업장]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>영업장</remote-alias>
+              <ordinal>1</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>방문고객구분</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[방문고객구분]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>방문고객구분</remote-alias>
+              <ordinal>2</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>일본</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[일본]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>일본</remote-alias>
+              <ordinal>3</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>544</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>중국</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[중국]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>중국</remote-alias>
+              <ordinal>4</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>606</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>홍콩</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[홍콩]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>홍콩</remote-alias>
+              <ordinal>5</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>242</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>대만</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[대만]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>대만</remote-alias>
+              <ordinal>6</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>426</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>동남아</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[동남아]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>동남아</remote-alias>
+              <ordinal>7</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>383</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>로컬</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[로컬]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>로컬</remote-alias>
+              <ordinal>8</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>414</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>러시아</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[러시아]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>러시아</remote-alias>
+              <ordinal>9</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>223</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>미국</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[미국]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>미국</remote-alias>
+              <ordinal>10</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>332</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>베트남</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[베트남]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>베트남</remote-alias>
+              <ordinal>11</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>248</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>태국</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[태국]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>태국</remote-alias>
+              <ordinal>12</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>150</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>몽골</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[몽골]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>몽골</remote-alias>
+              <ordinal>13</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>258</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>필리핀</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[필리핀]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>필리핀</remote-alias>
+              <ordinal>14</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>144</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>기타</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[기타]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>기타</remote-alias>
+              <ordinal>15</ordinal>
+              <family>그랜드코리아레저 입장객수</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>398</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:방문고객구분:nk]' type='palette'>
+            <map to='#008ff7'>
+              <bucket>&quot;단체관광객&quot;</bucket>
+            </map>
+            <map to='#1a70fc'>
+              <bucket>&quot;VIP&quot;</bucket>
+            </map>
+            <map to='#66ccff'>
+              <bucket>&quot;일반고객&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:영업장:nk]' palette='miller_stone_10_0' type='palette'>
+            <map to='#4f6980'>
+              <bucket>&quot;강남코엑스점&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;부산롯데점&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;서울드래곤시티점&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;강북힐튼점&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;미국&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='기준일자' datatype='date' default-format='*yyyy년 mm월' name='[매개 변수 1]' param-domain-type='list' role='measure' source-field='[federated.0242g2y10kyl6v106x8110awuzvm].[년월]' type='quantitative' value='#2024-07-31#'>
+          <calculation class='tableau' formula='#2024-07-31#' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='그랜드코리아레저 입장객수' id='그랜드코리아레저 입장객수_6DB084360FFD4DE487083F5DF099EA1D'>
+            <properties context=''>
+              <relation connection='excel-direct.1y8nn781dbmf7b1c0b32d0j1sofl' name='그랜드코리아레저 입장객수' table='[&apos;그랜드코리아레저 입장객수$&apos;]' type='table'>
+                <columns gridOrigin='A1:P789:no:A1:P789:0' header='yes' outcome='6'>
+                  <column datatype='date' name='년월' ordinal='0' />
+                  <column datatype='string' name='영업장' ordinal='1' />
+                  <column datatype='string' name='방문고객구분' ordinal='2' />
+                  <column datatype='integer' name='일본' ordinal='3' />
+                  <column datatype='integer' name='중국' ordinal='4' />
+                  <column datatype='integer' name='홍콩' ordinal='5' />
+                  <column datatype='integer' name='대만' ordinal='6' />
+                  <column datatype='integer' name='동남아' ordinal='7' />
+                  <column datatype='integer' name='로컬' ordinal='8' />
+                  <column datatype='integer' name='러시아' ordinal='9' />
+                  <column datatype='integer' name='미국' ordinal='10' />
+                  <column datatype='integer' name='베트남' ordinal='11' />
+                  <column datatype='integer' name='태국' ordinal='12' />
+                  <column datatype='integer' name='몽골' ordinal='13' />
+                  <column datatype='integer' name='필리핀' ordinal='14' />
+                  <column datatype='integer' name='기타' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='강원랜드_카지노이용현황' inline='true' name='federated.0bbn8o70qbhubq1aeff9b1lvkjz1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='강원랜드_출입현황' name='excel-direct.1koteez0z0xjyz1420pj61y017wv'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/wxlov/OneDrive/Desktop/태블로/유선배 경영정보시각화능력 실기(Tableau) 실습 자료_한번 더 해보자/Part3_모의고사_1회/소스/문제1_데이터/강원랜드_출입현황.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='강원랜드_게임이용정보' name='excel-direct.0zt312f0g6tupe0zjtf9h0ciimni'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/wxlov/OneDrive/Desktop/태블로/유선배 경영정보시각화능력 실기(Tableau) 실습 자료_한번 더 해보자/Part3_모의고사_1회/소스/문제1_데이터/강원랜드_게임이용정보.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[내외국인_출입현황].[입장일자]' />
+                <expression op='[게임종류].[방문일자]' />
+              </expression>
+              <expression op='='>
+                <expression op='IF ISNULL([내외국인_출입현황].[내국인 입장권 발행수]) THEN &apos;외국인&apos;&#13;&#10;ELSE &apos;내국인&apos;&#13;&#10;END' />
+                <expression op='[게임종류].[관광객_구분]' />
+              </expression>
+            </expression>
+          </clause>
+          <relation all='true' name='내외국인_출입현황' type='union'>
+            <columns header='yes'>
+              <column datatype='integer' name='입장일자' />
+              <column datatype='integer' name='내국인 입장권 발행수' />
+              <column datatype='integer' name='내국인 실제 입장인원수' />
+              <column datatype='integer' name='내국인 미입장인원수' />
+              <column datatype='integer' name='외국인 입장권 발행수' />
+              <column datatype='integer' name='외국인 실제 입장인원수' />
+              <column datatype='integer' name='외국인 미입장인원수' />
+              <column datatype='string' name='Sheet' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='excel-direct.1koteez0z0xjyz1420pj61y017wv' name='내국인' table='[내국인$]' type='table'>
+              <columns gridOrigin='A1:D32:no:A1:D32:0' header='yes' outcome='6'>
+                <column datatype='integer' name='입장일자' ordinal='0' />
+                <column datatype='integer' name='내국인 입장권 발행수' ordinal='1' />
+                <column datatype='integer' name='내국인 실제 입장인원수' ordinal='2' />
+                <column datatype='integer' name='내국인 미입장인원수' ordinal='3' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.1koteez0z0xjyz1420pj61y017wv' name='외국인' table='[외국인$]' type='table'>
+              <columns gridOrigin='A1:D32:no:A1:D32:0' header='yes' outcome='6'>
+                <column datatype='integer' name='입장일자' ordinal='0' />
+                <column datatype='integer' name='외국인 입장권 발행수' ordinal='1' />
+                <column datatype='integer' name='외국인 실제 입장인원수' ordinal='2' />
+                <column datatype='integer' name='외국인 미입장인원수' ordinal='3' />
+              </columns>
+            </relation>
+          </relation>
+          <relation name='피벗' type='pivot'>
+            <columns>
+              <column datatype='string' name='피벗 필드명' />
+              <column datatype='integer' name='피벗 필드 값' />
+            </columns>
+            <tag name='피벗 필드명'>
+              <value name='[다이사이]' />
+              <value name='[룰렛]' />
+              <value name='[바카라]' />
+              <value name='[블랙잭]' />
+              <value name='[빅휠]' />
+              <value name='[슬롯머신]' />
+              <value name='[쓰리포카]' />
+              <value name='[전자테이블]' />
+              <value name='[카지노워]' />
+              <value name='[케리비안포카]' />
+              <value name='[텍사스홀덤]' />
+            </tag>
+            <groups>
+              <group name='피벗 필드 값'>
+                <field name='[게임종류].[다이사이]' />
+                <field name='[게임종류].[룰렛]' />
+                <field name='[게임종류].[바카라]' />
+                <field name='[게임종류].[블랙잭]' />
+                <field name='[게임종류].[빅휠]' />
+                <field name='[게임종류].[슬롯머신]' />
+                <field name='[게임종류].[쓰리포카]' />
+                <field name='[게임종류].[전자테이블]' />
+                <field name='[게임종류].[카지노워]' />
+                <field name='[게임종류].[케리비안포카]' />
+                <field name='[게임종류].[텍사스홀덤]' />
+              </group>
+            </groups>
+            <relation connection='excel-direct.0zt312f0g6tupe0zjtf9h0ciimni' name='게임종류' table='[게임종류$]' type='table'>
+              <columns gridOrigin='A1:M63:no:A1:M63:0' header='yes' outcome='6'>
+                <column datatype='integer' name='방문일자' ordinal='0' />
+                <column datatype='string' name='관광객_구분' ordinal='1' />
+                <column datatype='integer' name='다이사이' ordinal='2' />
+                <column datatype='integer' name='룰렛' ordinal='3' />
+                <column datatype='integer' name='바카라' ordinal='4' />
+                <column datatype='integer' name='블랙잭' ordinal='5' />
+                <column datatype='integer' name='빅휠' ordinal='6' />
+                <column datatype='integer' name='슬롯머신' ordinal='7' />
+                <column datatype='integer' name='쓰리포카' ordinal='8' />
+                <column datatype='integer' name='전자테이블' ordinal='9' />
+                <column datatype='integer' name='카지노워' ordinal='10' />
+                <column datatype='integer' name='케리비안포카' ordinal='11' />
+                <column datatype='integer' name='텍사스홀덤' ordinal='12' />
+              </columns>
+            </relation>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[내외국인_출입현황]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[게임종류]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M63:no:A1:M63:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>입장일자</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[입장일자]</local-name>
+            <parent-name>[내외국인_출입현황]</parent-name>
+            <remote-alias>입장일자</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>내국인 입장권 발행수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[내국인 입장권 발행수]</local-name>
+            <parent-name>[내외국인_출입현황]</parent-name>
+            <remote-alias>내국인 입장권 발행수</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>내국인 실제 입장인원수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[내국인 실제 입장인원수]</local-name>
+            <parent-name>[내외국인_출입현황]</parent-name>
+            <remote-alias>내국인 실제 입장인원수</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>내국인 미입장인원수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[내국인 미입장인원수]</local-name>
+            <parent-name>[내외국인_출입현황]</parent-name>
+            <remote-alias>내국인 미입장인원수</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>외국인 입장권 발행수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[외국인 입장권 발행수]</local-name>
+            <parent-name>[내외국인_출입현황]</parent-name>
+            <remote-alias>외국인 입장권 발행수</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>외국인 실제 입장인원수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[외국인 실제 입장인원수]</local-name>
+            <parent-name>[내외국인_출입현황]</parent-name>
+            <remote-alias>외국인 실제 입장인원수</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>외국인 미입장인원수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[외국인 미입장인원수]</local-name>
+            <parent-name>[내외국인_출입현황]</parent-name>
+            <remote-alias>외국인 미입장인원수</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[내외국인_출입현황]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[내외국인_출입현황]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>방문일자</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[방문일자]</local-name>
+            <parent-name>[게임종류]</parent-name>
+            <remote-alias>방문일자</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>관광객_구분</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[관광객_구분]</local-name>
+            <parent-name>[게임종류]</parent-name>
+            <remote-alias>관광객_구분</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>피벗 필드명</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[피벗 필드명]</local-name>
+            <parent-name>[피벗]</parent-name>
+            <remote-alias>피벗 필드명</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>피벗 필드 값</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[피벗 필드 값]</local-name>
+            <parent-name>[피벗]</parent-name>
+            <remote-alias>피벗 필드 값</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[_C0BF2EBB3B1B4657B56E64FB2C22595C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='기준일자' datatype='datetime' name='[Calculation_859343105059983361]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATEPARSE(&apos;yyyyMMdd&apos;,STR([입장일자]))' />
+      </column>
+      <column caption='실제_입장인원수' datatype='integer' name='[Calculation_859343105060499458]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF ISNULL([내국인 입장권 발행수]) THEN [외국인 실제 입장인원수]&#13;&#10;ELSE [내국인 실제 입장인원수]&#13;&#10;END' />
+      </column>
+      <column caption='게임별_이용현황' datatype='real' name='[Calculation_859343105060761603]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([피벗 필드 값]) / AVG([Calculation_859343105060499458])' />
+      </column>
+      <column caption='게임종류별_이용현황' datatype='table' name='[__tableau_internal_object_id__].[_C0BF2EBB3B1B4657B56E64FB2C22595C]' role='measure' type='quantitative' />
+      <column caption='관광객 구분' datatype='string' name='[관광객_구분]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='Data/TableauTemp 1/#TableauTemp_1l9iy1t1mtgov01661qbw0zkdnmk.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/31/2025 06:22:43 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>입장일자</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[입장일자]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>입장일자</remote-alias>
+              <ordinal>0</ordinal>
+              <family>내외국인_출입현황</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>내국인 입장권 발행수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[내국인 입장권 발행수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>내국인 입장권 발행수</remote-alias>
+              <ordinal>1</ordinal>
+              <family>내외국인_출입현황</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>내국인 실제 입장인원수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[내국인 실제 입장인원수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>내국인 실제 입장인원수</remote-alias>
+              <ordinal>2</ordinal>
+              <family>내외국인_출입현황</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>내국인 미입장인원수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[내국인 미입장인원수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>내국인 미입장인원수</remote-alias>
+              <ordinal>3</ordinal>
+              <family>내외국인_출입현황</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>외국인 입장권 발행수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[외국인 입장권 발행수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>외국인 입장권 발행수</remote-alias>
+              <ordinal>4</ordinal>
+              <family>내외국인_출입현황</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>외국인 실제 입장인원수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[외국인 실제 입장인원수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>외국인 실제 입장인원수</remote-alias>
+              <ordinal>5</ordinal>
+              <family>내외국인_출입현황</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>외국인 미입장인원수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[외국인 미입장인원수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>외국인 미입장인원수</remote-alias>
+              <ordinal>6</ordinal>
+              <family>내외국인_출입현황</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sheet</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sheet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sheet</remote-alias>
+              <ordinal>7</ordinal>
+              <family>내외국인_출입현황</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>8</ordinal>
+              <family>내외국인_출입현황</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>방문일자</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[방문일자]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>방문일자</remote-alias>
+              <ordinal>9</ordinal>
+              <family>게임종류</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>관광객_구분</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[관광객_구분]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>관광객_구분</remote-alias>
+              <ordinal>10</ordinal>
+              <family>게임종류</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>피벗 필드명</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[피벗 필드명]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>피벗 필드명</remote-alias>
+              <ordinal>11</ordinal>
+              <family>피벗</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>피벗 필드 값</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[피벗 필드 값]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>피벗 필드 값</remote-alias>
+              <ordinal>12</ordinal>
+              <family>피벗</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>214</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='입장일자' />
+        <field-sort-custom-order field='Calculation_859343105059983361' />
+        <field-sort-custom-order field='내국인 입장권 발행수' />
+        <field-sort-custom-order field='Calculation_859343105060499458' />
+        <field-sort-custom-order field='내국인 실제 입장인원수' />
+        <field-sort-custom-order field='내국인 미입장인원수' />
+        <field-sort-custom-order field='외국인 입장권 발행수' />
+        <field-sort-custom-order field='외국인 실제 입장인원수' />
+        <field-sort-custom-order field='외국인 미입장인원수' />
+        <field-sort-custom-order field='Sheet' />
+        <field-sort-custom-order field='Table Name' />
+        <field-sort-custom-order field='방문일자' />
+        <field-sort-custom-order field='관광객_구분' />
+        <field-sort-custom-order field='피벗 필드명' />
+        <field-sort-custom-order field='피벗 필드 값' />
+        <field-sort-custom-order field='Calculation_859343105060761603' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='게임종류별_이용현황' id='_C0BF2EBB3B1B4657B56E64FB2C22595C'>
+            <properties context=''>
+              <relation join='left' type='join'>
+                <clause type='join'>
+                  <expression op='AND'>
+                    <expression op='='>
+                      <expression op='[내외국인_출입현황].[입장일자]' />
+                      <expression op='[게임종류].[방문일자]' />
+                    </expression>
+                    <expression op='='>
+                      <expression op='IF ISNULL([내외국인_출입현황].[내국인 입장권 발행수]) THEN &apos;외국인&apos;&#13;&#10;ELSE &apos;내국인&apos;&#13;&#10;END' />
+                      <expression op='[게임종류].[관광객_구분]' />
+                    </expression>
+                  </expression>
+                </clause>
+                <relation all='true' name='내외국인_출입현황' type='union'>
+                  <columns header='yes'>
+                    <column datatype='integer' name='입장일자' />
+                    <column datatype='integer' name='내국인 입장권 발행수' />
+                    <column datatype='integer' name='내국인 실제 입장인원수' />
+                    <column datatype='integer' name='내국인 미입장인원수' />
+                    <column datatype='integer' name='외국인 입장권 발행수' />
+                    <column datatype='integer' name='외국인 실제 입장인원수' />
+                    <column datatype='integer' name='외국인 미입장인원수' />
+                    <column datatype='string' name='Sheet' />
+                    <column datatype='string' name='Table Name' />
+                  </columns>
+                  <relation connection='excel-direct.1koteez0z0xjyz1420pj61y017wv' name='내국인' table='[내국인$]' type='table'>
+                    <columns gridOrigin='A1:D32:no:A1:D32:0' header='yes' outcome='6'>
+                      <column datatype='integer' name='입장일자' ordinal='0' />
+                      <column datatype='integer' name='내국인 입장권 발행수' ordinal='1' />
+                      <column datatype='integer' name='내국인 실제 입장인원수' ordinal='2' />
+                      <column datatype='integer' name='내국인 미입장인원수' ordinal='3' />
+                    </columns>
+                  </relation>
+                  <relation connection='excel-direct.1koteez0z0xjyz1420pj61y017wv' name='외국인' table='[외국인$]' type='table'>
+                    <columns gridOrigin='A1:D32:no:A1:D32:0' header='yes' outcome='6'>
+                      <column datatype='integer' name='입장일자' ordinal='0' />
+                      <column datatype='integer' name='외국인 입장권 발행수' ordinal='1' />
+                      <column datatype='integer' name='외국인 실제 입장인원수' ordinal='2' />
+                      <column datatype='integer' name='외국인 미입장인원수' ordinal='3' />
+                    </columns>
+                  </relation>
+                </relation>
+                <relation name='피벗' type='pivot'>
+                  <columns>
+                    <column datatype='string' name='피벗 필드명' />
+                    <column datatype='integer' name='피벗 필드 값' />
+                  </columns>
+                  <tag name='피벗 필드명'>
+                    <value name='[다이사이]' />
+                    <value name='[룰렛]' />
+                    <value name='[바카라]' />
+                    <value name='[블랙잭]' />
+                    <value name='[빅휠]' />
+                    <value name='[슬롯머신]' />
+                    <value name='[쓰리포카]' />
+                    <value name='[전자테이블]' />
+                    <value name='[카지노워]' />
+                    <value name='[케리비안포카]' />
+                    <value name='[텍사스홀덤]' />
+                  </tag>
+                  <groups>
+                    <group name='피벗 필드 값'>
+                      <field name='[게임종류].[다이사이]' />
+                      <field name='[게임종류].[룰렛]' />
+                      <field name='[게임종류].[바카라]' />
+                      <field name='[게임종류].[블랙잭]' />
+                      <field name='[게임종류].[빅휠]' />
+                      <field name='[게임종류].[슬롯머신]' />
+                      <field name='[게임종류].[쓰리포카]' />
+                      <field name='[게임종류].[전자테이블]' />
+                      <field name='[게임종류].[카지노워]' />
+                      <field name='[게임종류].[케리비안포카]' />
+                      <field name='[게임종류].[텍사스홀덤]' />
+                    </group>
+                  </groups>
+                  <relation connection='excel-direct.0zt312f0g6tupe0zjtf9h0ciimni' name='게임종류' table='[게임종류$]' type='table'>
+                    <columns gridOrigin='A1:M63:no:A1:M63:0' header='yes' outcome='6'>
+                      <column datatype='integer' name='방문일자' ordinal='0' />
+                      <column datatype='string' name='관광객_구분' ordinal='1' />
+                      <column datatype='integer' name='다이사이' ordinal='2' />
+                      <column datatype='integer' name='룰렛' ordinal='3' />
+                      <column datatype='integer' name='바카라' ordinal='4' />
+                      <column datatype='integer' name='블랙잭' ordinal='5' />
+                      <column datatype='integer' name='빅휠' ordinal='6' />
+                      <column datatype='integer' name='슬롯머신' ordinal='7' />
+                      <column datatype='integer' name='쓰리포카' ordinal='8' />
+                      <column datatype='integer' name='전자테이블' ordinal='9' />
+                      <column datatype='integer' name='카지노워' ordinal='10' />
+                      <column datatype='integer' name='케리비안포카' ordinal='11' />
+                      <column datatype='integer' name='텍사스홀덤' ordinal='12' />
+                    </columns>
+                  </relation>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='방문고객구분_필터' name='[Action1_E62D0C6F80E84C46BFAF720C8F5EFBE9]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='지역·영업장 기반 입장객 현황 분석' type='sheet' worksheet='지역·방문고객구분별 총 입장객 수' />
+      <link caption='방문고객구분_필터' delimiter=',' escape='\' expression='tsl:%EC%A7%80%EC%97%AD%C2%B7%EC%98%81%EC%97%85%EC%9E%A5%20%EA%B8%B0%EB%B0%98%20%EC%9E%85%EC%9E%A5%EA%B0%9D%20%ED%98%84%ED%99%A9%20%EB%B6%84%EC%84%9D?%5Bfederated.0242g2y10kyl6v106x8110awuzvm%5D.%5B%EB%B0%A9%EB%AC%B8%EA%B3%A0%EA%B0%9D%EA%B5%AC%EB%B6%84%5D~s0=&lt;[federated.0242g2y10kyl6v106x8110awuzvm].[방문고객구분]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='지역·방문고객구분별 총 입장객 수' />
+        <param name='target' value='지역·영업장 기반 입장객 현황 분석' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='그랜드코리아레저 입장객수(그랜드코리아레저_입장객수)' name='federated.0242g2y10kyl6v106x8110awuzvm' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0242g2y10kyl6v106x8110awuzvm'>
+      <column datatype='string' name='[방문고객구분]' role='dimension' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='문제3-2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>영업장별 총 입장객 수</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='그랜드코리아레저 입장객수(그랜드코리아레저_입장객수)' name='federated.0242g2y10kyl6v106x8110awuzvm' />
+            <datasource caption='매개 변수' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='기준일자' datatype='date' default-format='*yyyy년 mm월' name='[매개 변수 1]' param-domain-type='list' role='measure' source-field='[federated.0242g2y10kyl6v106x8110awuzvm].[년월]' type='quantitative' value='#2024-07-31#'>
+              <calculation class='tableau' formula='#2024-07-31#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0242g2y10kyl6v106x8110awuzvm'>
+            <column caption='총_입장객_수' datatype='integer' name='[Calculation_859343105063391237]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[기타]+[대만]+[동남아]+[러시아]+[로컬]+[몽골]+[미국]+[베트남]+[일본]+[중국]+[태국]+[필리핀]+[홍콩]' />
+            </column>
+            <column caption='당월' datatype='boolean' name='[Calculation_859343105067462663]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[매개 변수 1] = [년월]' />
+            </column>
+            <column-instance column='[Calculation_859343105067462663]' derivation='None' name='[none:Calculation_859343105067462663:nk]' pivot='key' type='nominal' />
+            <column-instance column='[영업장]' derivation='None' name='[none:영업장:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_859343105063391237]' derivation='Sum' name='[sum:Calculation_859343105063391237:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[기타]' role='measure' type='quantitative' />
+            <column datatype='date' name='[년월]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[대만]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[동남아]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[러시아]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[로컬]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[몽골]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[미국]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[베트남]' role='measure' type='quantitative' />
+            <column datatype='string' name='[영업장]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[일본]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[중국]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[태국]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[필리핀]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[홍콩]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0242g2y10kyl6v106x8110awuzvm].[none:Calculation_859343105067462663:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_859343105067462663:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0242g2y10kyl6v106x8110awuzvm].[none:Calculation_859343105067462663:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' />
+              <text column='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]</rows>
+        <cols>[federated.0242g2y10kyl6v106x8110awuzvm].[none:영업장:nk]</cols>
+      </table>
+      <simple-id uuid='{1811093B-2DC8-46DC-AB50-BAF01560823C}' />
+    </worksheet>
+    <worksheet name='문제3-3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Malgun Gothic'>영업장·월별 총 입장객 수</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='그랜드코리아레저 입장객수(그랜드코리아레저_입장객수)' name='federated.0242g2y10kyl6v106x8110awuzvm' />
+            <datasource caption='매개 변수' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='기준일자' datatype='date' default-format='*yyyy년 mm월' name='[매개 변수 1]' param-domain-type='list' role='measure' source-field='[federated.0242g2y10kyl6v106x8110awuzvm].[년월]' type='quantitative' value='#2024-07-31#'>
+              <calculation class='tableau' formula='#2024-07-31#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0242g2y10kyl6v106x8110awuzvm'>
+            <column caption='총_입장객_수' datatype='integer' name='[Calculation_859343105063391237]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[기타]+[대만]+[동남아]+[러시아]+[로컬]+[몽골]+[미국]+[베트남]+[일본]+[중국]+[태국]+[필리핀]+[홍콩]' />
+            </column>
+            <column caption='최근_1년' datatype='boolean' name='[Calculation_859343105067540488]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATEADD(&apos;year&apos;,-1,[Parameters].[매개 변수 1]) &lt;= [년월] AND [년월] &lt;= [Parameters].[매개 변수 1]' />
+            </column>
+            <column-instance column='[Calculation_859343105067540488]' derivation='None' name='[none:Calculation_859343105067540488:nk]' pivot='key' type='nominal' />
+            <column-instance column='[영업장]' derivation='None' name='[none:영업장:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_859343105063391237]' derivation='Sum' name='[sum:Calculation_859343105063391237:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[년월]' derivation='Month-Trunc' name='[tmn:년월:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[기타]' role='measure' type='quantitative' />
+            <column datatype='date' name='[년월]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[대만]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[동남아]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[러시아]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[로컬]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[몽골]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[미국]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[베트남]' role='measure' type='quantitative' />
+            <column datatype='string' name='[영업장]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[일본]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[중국]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[태국]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[필리핀]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[홍콩]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0242g2y10kyl6v106x8110awuzvm].[none:Calculation_859343105067540488:nk]'>
+            <groupfilter function='member' level='[none:Calculation_859343105067540488:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0242g2y10kyl6v106x8110awuzvm].[none:Calculation_859343105067540488:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0242g2y10kyl6v106x8110awuzvm].[none:영업장:nk]' />
+              <text column='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]</rows>
+        <cols>[federated.0242g2y10kyl6v106x8110awuzvm].[tmn:년월:qk]</cols>
+      </table>
+      <simple-id uuid='{2E802A9F-2C37-47CA-9AEB-58DE2F4663B9}' />
+    </worksheet>
+    <worksheet name='방문고객구분 ·월별 총입장객수'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Malgun Gothic'>방문고객구분 ·월별 총입장객수</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='그랜드코리아레저 입장객수(그랜드코리아레저_입장객수)' name='federated.0242g2y10kyl6v106x8110awuzvm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0242g2y10kyl6v106x8110awuzvm'>
+            <column caption='방문월' datatype='string' name='[Calculation_859343105061302276]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR(DATEPART(&apos;month&apos;,[년월])) + &apos;월&apos;' />
+            </column>
+            <column-instance column='[Calculation_859343105061302276]' derivation='None' name='[none:Calculation_859343105061302276:nk]' pivot='key' type='nominal' />
+            <column-instance column='[방문고객구분]' derivation='None' name='[none:방문고객구분:nk]' pivot='key' type='nominal' />
+            <column-instance column='[미국]' derivation='Sum' name='[sum:미국:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[년월]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[미국]' role='measure' type='quantitative' />
+            <column datatype='string' name='[방문고객구분]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0242g2y10kyl6v106x8110awuzvm].[none:방문고객구분:nk]' />
+              <text column='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:미국:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0242g2y10kyl6v106x8110awuzvm].[sum:미국:qk]</rows>
+        <cols>[federated.0242g2y10kyl6v106x8110awuzvm].[none:Calculation_859343105061302276:nk]</cols>
+      </table>
+      <simple-id uuid='{02D83D69-8F43-4100-837C-26D36C083BEF}' />
+    </worksheet>
+    <worksheet name='방문고객구분·영업장 별 총 입장객 수'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Malgun Gothic'>방문고객구분·영업장 별 총 입장객 수</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='그랜드코리아레저 입장객수(그랜드코리아레저_입장객수)' name='federated.0242g2y10kyl6v106x8110awuzvm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0242g2y10kyl6v106x8110awuzvm'>
+            <column caption='총_입장객_수' datatype='integer' name='[Calculation_859343105063391237]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[기타]+[대만]+[동남아]+[러시아]+[로컬]+[몽골]+[미국]+[베트남]+[일본]+[중국]+[태국]+[필리핀]+[홍콩]' />
+            </column>
+            <column-instance column='[방문고객구분]' derivation='None' name='[none:방문고객구분:nk]' pivot='key' type='nominal' />
+            <column-instance column='[영업장]' derivation='None' name='[none:영업장:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_859343105063391237]' derivation='Sum' name='[sum:Calculation_859343105063391237:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[기타]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[대만]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[동남아]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[러시아]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[로컬]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[몽골]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[미국]' role='measure' type='quantitative' />
+            <column datatype='string' name='[방문고객구분]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[베트남]' role='measure' type='quantitative' />
+            <column datatype='string' name='[영업장]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[일본]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[중국]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[태국]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[필리핀]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[홍콩]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' num-steps='5' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' />
+              <text column='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0242g2y10kyl6v106x8110awuzvm].[none:영업장:nk]</rows>
+        <cols>[federated.0242g2y10kyl6v106x8110awuzvm].[none:방문고객구분:nk]</cols>
+      </table>
+      <simple-id uuid='{01B5D0B1-731E-4316-86AB-B5CA5645669E}' />
+    </worksheet>
+    <worksheet name='방문고객구분별 총 입장객 수'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Malgun Gothic'>방문고객구분별 총 입장객 수</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='그랜드코리아레저 입장객수(그랜드코리아레저_입장객수)' name='federated.0242g2y10kyl6v106x8110awuzvm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0242g2y10kyl6v106x8110awuzvm'>
+            <column caption='총_입장객_수' datatype='integer' name='[Calculation_859343105063391237]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[기타]+[대만]+[동남아]+[러시아]+[로컬]+[몽골]+[미국]+[베트남]+[일본]+[중국]+[태국]+[필리핀]+[홍콩]' />
+            </column>
+            <column caption='총_입장객_수(워터폴)' datatype='integer' name='[Calculation_859343105064206342]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='-[Calculation_859343105063391237]' />
+            </column>
+            <column-instance column='[Calculation_859343105063391237]' derivation='Sum' name='[cum:sum:Calculation_859343105063391237:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[방문고객구분]' derivation='None' name='[none:방문고객구분:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_859343105063391237]' derivation='Sum' name='[sum:Calculation_859343105063391237:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_859343105064206342]' derivation='Sum' name='[sum:Calculation_859343105064206342:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[기타]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[대만]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[동남아]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[러시아]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[로컬]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[몽골]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[미국]' role='measure' type='quantitative' />
+            <column datatype='string' name='[방문고객구분]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[베트남]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[일본]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[중국]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[태국]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[필리핀]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[홍콩]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0242g2y10kyl6v106x8110awuzvm].[none:방문고객구분:nk]' direction='ASC' using='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' num-steps='3' palette='sunrise_sunset_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <encodings>
+              <color column='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' />
+              <size column='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105064206342:qk]' />
+              <text column='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]</run>
+                <run>&gt;명</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0242g2y10kyl6v106x8110awuzvm].[cum:sum:Calculation_859343105063391237:qk]</rows>
+        <cols total='true'>[federated.0242g2y10kyl6v106x8110awuzvm].[none:방문고객구분:nk]</cols>
+      </table>
+      <simple-id uuid='{7776908E-22A0-4F33-8CBE-07852EADD0BE}' />
+    </worksheet>
+    <worksheet name='지역·방문고객구분별 총 입장객 수'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Malgun Gothic'>지역·방문고객구분별 총 입장객 수</run>
+            <run>(&lt;[Parameters].[매개 변수 1]&gt;)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='그랜드코리아레저 입장객수(그랜드코리아레저_입장객수)' name='federated.0242g2y10kyl6v106x8110awuzvm' />
+            <datasource caption='매개 변수' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='기준일자' datatype='date' default-format='*yyyy년 mm월' name='[매개 변수 1]' param-domain-type='list' role='measure' source-field='[federated.0242g2y10kyl6v106x8110awuzvm].[년월]' type='quantitative' value='#2024-07-31#'>
+              <calculation class='tableau' formula='#2024-07-31#' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0242g2y10kyl6v106x8110awuzvm'>
+            <column caption='당월' datatype='boolean' name='[Calculation_859343105067462663]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[매개 변수 1] = [년월]' />
+            </column>
+            <column caption='지역' datatype='string' name='[Calculation_859343105071996937]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='LEFT([영업장],2)' />
+            </column>
+            <column-instance column='[Calculation_859343105067462663]' derivation='None' name='[none:Calculation_859343105067462663:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_859343105071996937]' derivation='None' name='[none:Calculation_859343105071996937:nk]' pivot='key' type='nominal' />
+            <column-instance column='[방문고객구분]' derivation='None' name='[none:방문고객구분:nk]' pivot='key' type='nominal' />
+            <column-instance column='[대만]' derivation='Sum' name='[sum:대만:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[미국]' derivation='Sum' name='[sum:미국:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[일본]' derivation='Sum' name='[sum:일본:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[중국]' derivation='Sum' name='[sum:중국:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[홍콩]' derivation='Sum' name='[sum:홍콩:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[년월]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[대만]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[미국]' role='measure' type='quantitative' />
+            <column datatype='string' name='[방문고객구분]' role='dimension' type='nominal' />
+            <column datatype='string' name='[영업장]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[일본]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[중국]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[홍콩]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0242g2y10kyl6v106x8110awuzvm].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0242g2y10kyl6v106x8110awuzvm].[sum:대만:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0242g2y10kyl6v106x8110awuzvm].[sum:미국:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0242g2y10kyl6v106x8110awuzvm].[sum:일본:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0242g2y10kyl6v106x8110awuzvm].[sum:중국:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0242g2y10kyl6v106x8110awuzvm].[sum:홍콩:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0242g2y10kyl6v106x8110awuzvm].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0242g2y10kyl6v106x8110awuzvm].[sum:대만:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0242g2y10kyl6v106x8110awuzvm].[sum:미국:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0242g2y10kyl6v106x8110awuzvm].[sum:일본:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0242g2y10kyl6v106x8110awuzvm].[sum:중국:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0242g2y10kyl6v106x8110awuzvm].[sum:홍콩:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0242g2y10kyl6v106x8110awuzvm].[none:Calculation_859343105067462663:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_859343105067462663:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0242g2y10kyl6v106x8110awuzvm].[:Measure Names]</column>
+            <column>[federated.0242g2y10kyl6v106x8110awuzvm].[none:Calculation_859343105067462663:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-color' value='#d4d4d4' />
+            <format attr='background-color' field='[federated.0242g2y10kyl6v106x8110awuzvm].[none:방문고객구분:nk]' value='#e9edf5' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#e9edf5' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.0242g2y10kyl6v106x8110awuzvm].[none:Calculation_859343105071996937:nk]' value='center' />
+            <format attr='text-align' field='[federated.0242g2y10kyl6v106x8110awuzvm].[:Measure Names]' value='center' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0242g2y10kyl6v106x8110awuzvm].[Multiple Values]' num-steps='4' palette='red_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0242g2y10kyl6v106x8110awuzvm].[Multiple Values]' />
+              <text column='[federated.0242g2y10kyl6v106x8110awuzvm].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0242g2y10kyl6v106x8110awuzvm].[none:Calculation_859343105071996937:nk] / [federated.0242g2y10kyl6v106x8110awuzvm].[:Measure Names])</rows>
+        <cols>[federated.0242g2y10kyl6v106x8110awuzvm].[none:방문고객구분:nk]</cols>
+      </table>
+      <simple-id uuid='{BD0365E0-1249-4531-827D-8FA603E1EE7A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='방문객 유형별 입장객 분석'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>방문객 유형별 입장객 분석</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='font-size' value='15' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='1300' minheight='900' minwidth='1300' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='167' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='176' param='horz' type-v2='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='3' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+              <zone h='4555' id='166' type-v2='title' w='96924' x='1538' y='2222'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                  <format attr='margin-top' value='8' />
+                  <format attr='margin-bottom' value='5' />
+                  <format attr='margin-left' value='8' />
+                </zone-style>
+              </zone>
+              <zone h='91001' id='7' param='vert' type-v2='layout-flow' w='96924' x='1538' y='6777'>
+                <zone h='91001' id='174' param='vert' type-v2='layout-flow' w='96924' x='1538' y='6777'>
+                  <zone fixed-size='280' h='33333' id='129' is-fixed='true' name='방문고객구분 ·월별 총입장객수' w='96924' x='1538' y='6777'>
+                    <layout-cache minheight='183' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#d4d4d4' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='10' />
+                      <format attr='padding' value='10' />
+                      <format attr='background-color' value='#ffffff' />
+                    </zone-style>
+                  </zone>
+                  <zone h='57667' id='14' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='96924' x='1538' y='40110'>
+                    <zone h='57667' id='31' name='방문고객구분별 총 입장객 수' w='48462' x='1538' y='40111'>
+                      <layout-cache cell-count-w='4' minheight='163' non-cell-size-w='56' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#d4d4d4' />
+                        <format attr='border-style' value='solid' />
+                        <format attr='border-width' value='1' />
+                        <format attr='margin' value='10' />
+                        <format attr='padding' value='10' />
+                        <format attr='background-color' value='#ffffff' />
+                      </zone-style>
+                    </zone>
+                    <zone h='57667' id='35' name='방문고객구분·영업장 별 총 입장객 수' w='48462' x='50000' y='40111'>
+                      <layout-cache cell-count-h='4' cell-count-w='3' non-cell-size-h='82' non-cell-size-w='121' type-h='cell' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#d4d4d4' />
+                        <format attr='border-style' value='solid' />
+                        <format attr='border-width' value='1' />
+                        <format attr='margin' value='10' />
+                        <format attr='padding' value='10' />
+                        <format attr='background-color' value='#ffffff' />
+                      </zone-style>
+                    </zone>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='padding' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='0' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+                <format attr='padding' value='20' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='268' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='267' param='vert' type-v2='layout-flow' w='98770' x='615' y='889'>
+                <zone h='4555' id='166' type-v2='title' w='96924' x='1538' y='2222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='258' h='33333' id='129' is-fixed='true' name='방문고객구분 ·월별 총입장객수' w='96924' x='1538' y='6777'>
+                  <layout-cache minheight='184' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#d4d4d4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='57667' id='31' is-fixed='true' name='방문고객구분별 총 입장객 수' w='48462' x='1538' y='40111'>
+                  <layout-cache cell-count-w='4' minheight='164' non-cell-size-w='56' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#d4d4d4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='57667' id='35' is-fixed='true' name='방문고객구분·영업장 별 총 입장객 수' w='48462' x='50000' y='40111'>
+                  <layout-cache cell-count-w='3' non-cell-size-w='121' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#d4d4d4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{415B103B-FEFE-46B6-9A1C-67F6030E7DE8}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='지역·영업장 기반 입장객 현황 분석'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Malgun Gothic'>지역·영업장 기반 입장객 현황 분석</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='900' maxwidth='1300' minheight='900' minwidth='1300' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='매개 변수' name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='기준일자' datatype='date' default-format='*yyyy년 mm월' name='[매개 변수 1]' param-domain-type='list' role='measure' source-field='[federated.0242g2y10kyl6v106x8110awuzvm].[년월]' type='quantitative' value='#2024-07-31#'>
+          <calculation class='tableau' formula='#2024-07-31#' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='194' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='3' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+            <zone fixed-size='44' h='5778' id='193' is-fixed='true' type-v2='title' w='96924' x='1538' y='2222'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-left' value='10' />
+              </zone-style>
+            </zone>
+            <zone h='89778' id='221' param='vert' type-v2='layout-flow' w='96924' x='1538' y='8000'>
+              <zone fixed-size='52' h='5778' id='203' is-fixed='true' param='horz' type-v2='layout-flow' w='96308' x='1846' y='8444'>
+                <zone fixed-size='112' h='5556' id='290' is-fixed='true' mode='compact' param='[Parameters].[매개 변수 1]' type-v2='paramctrl' w='9230' x='2692' y='8555'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='5556' id='204' type-v2='empty' w='42693' x='11922' y='8555'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='5556' id='216' type-v2='empty' w='42693' x='54615' y='8555'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#d4d4d4' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='0' />
+                  <format attr='margin-right' value='10' />
+                  <format attr='margin-left' value='10' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='409' h='45444' id='14' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='96308' x='1846' y='14222'>
+                <zone h='45445' id='167' name='지역·방문고객구분별 총 입장객 수' w='48154' x='1846' y='14222'>
+                  <layout-cache cell-count-w='2' fixed-size-h='384' non-cell-size-w='258' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#d4d4d4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='10' />
+                    <format attr='padding' value='10' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='45445' id='183' name='문제3-2' w='48154' x='50000' y='14222'>
+                  <layout-cache cell-count-w='12' minheight='164' non-cell-size-w='63' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#d4d4d4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='10' />
+                    <format attr='padding' value='10' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='0' />
+                  <format attr='padding' value='0' />
+                </zone-style>
+              </zone>
+              <zone h='37668' id='166' param='horz' type-v2='layout-flow' w='96308' x='1846' y='59666'>
+                <zone h='37668' id='168' name='문제3-3' w='84155' x='1846' y='59666'>
+                  <layout-cache minheight='197' minwidth='159' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#d4d4d4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='10' />
+                    <format attr='margin-top' value='0' />
+                    <format attr='padding' value='10' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='150' h='37668' id='217' is-fixed='true' param='vert' type-v2='layout-flow' w='12153' x='86001' y='59666'>
+                  <zone h='9556' id='293' name='문제3-3' pane-specification-id='0' param='[federated.0242g2y10kyl6v106x8110awuzvm].[none:영업장:nk]' type-v2='color' w='11384' x='86078' y='59777'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='27001' id='218' type-v2='empty' w='11384' x='86078' y='69333'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone-style>
+                    <format attr='border-color' value='#d4d4d4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin-right' value='8' />
+                    <format attr='margin-bottom' value='8' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='0' />
+                  <format attr='padding' value='0' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='0' />
+              <format attr='padding' value='20' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#f5f5f5' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='295' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='294' param='vert' type-v2='layout-flow' w='98770' x='615' y='889'>
+                <zone fixed-size='44' h='5778' id='193' type-v2='title' w='96924' x='1538' y='2222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='112' h='5556' id='290' mode='compact' param='[Parameters].[매개 변수 1]' type-v2='paramctrl' w='9230' x='2692' y='8555'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45445' id='167' is-fixed='true' name='지역·방문고객구분별 총 입장객 수' w='48154' x='1846' y='14222'>
+                  <layout-cache cell-count-w='2' fixed-size-h='384' non-cell-size-w='258' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#d4d4d4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45445' id='183' is-fixed='true' name='문제3-2' w='48154' x='50000' y='14222'>
+                  <layout-cache cell-count-w='12' minheight='164' non-cell-size-w='63' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#d4d4d4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37668' id='168' is-fixed='true' name='문제3-3' w='84155' x='1846' y='59666'>
+                  <layout-cache minheight='198' minwidth='159' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#d4d4d4' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='9556' id='293' name='문제3-3' pane-specification-id='0' param='[federated.0242g2y10kyl6v106x8110awuzvm].[none:영업장:nk]' type-v2='color' w='11384' x='86078' y='59777'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='background-color' value='#f5f5f5' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4F1D2C1A-C606-432D-BB08-673082806E35}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='dashboard' name='방문객 유형별 입장객 분석' tab-color='#f66273'>
+      <viewpoints>
+        <viewpoint name='방문고객구분 ·월별 총입장객수'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='방문고객구분·영업장 별 총 입장객 수'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='방문고객구분별 총 입장객 수'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='166' />
+      <simple-id uuid='{389358B9-418D-4A4E-B3D1-B781E099B32F}' />
+    </window>
+    <window class='worksheet' name='방문고객구분 ·월별 총입장객수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0242g2y10kyl6v106x8110awuzvm].[none:방문고객구분:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{01F9FDD7-FCDF-42FB-8C16-74C7EC5F18CB}' />
+    </window>
+    <window class='worksheet' name='방문고객구분별 총 입장객 수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{882412E0-8170-4900-988B-2C9103FAD8A3}' />
+    </window>
+    <window class='worksheet' name='방문고객구분·영업장 별 총 입장객 수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{37F76AEA-7860-4577-9FA7-8BC99C98DF8E}' />
+    </window>
+    <window class='dashboard' name='지역·영업장 기반 입장객 현황 분석' tab-color='#f66273'>
+      <viewpoints>
+        <viewpoint name='문제3-2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='문제3-3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='지역·방문고객구분별 총 입장객 수'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='193' />
+      <simple-id uuid='{BA7BB380-BC01-444D-9CB6-96699D1EABE4}' />
+    </window>
+    <window class='worksheet' name='지역·방문고객구분별 총 입장객 수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0242g2y10kyl6v106x8110awuzvm].[Multiple Values]' type='color' />
+            <card mode='compact' param='[Parameters].[매개 변수 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{81E11A44-6D59-4A81-B0D4-F45700113EFA}' />
+    </window>
+    <window class='worksheet' maximized='true' name='문제3-2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0242g2y10kyl6v106x8110awuzvm].[sum:Calculation_859343105063391237:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{E87388CA-9F77-4550-90FC-9D6924302FD0}' />
+    </window>
+    <window class='worksheet' name='문제3-3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0242g2y10kyl6v106x8110awuzvm].[none:영업장:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{A6FD6056-ABDB-475E-80EF-B5A1020111A2}' />
+    </window>
+  </windows>
+</workbook>
