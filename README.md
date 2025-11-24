@@ -40,7 +40,7 @@
 ---
 
 ## 📁 Repository Structure
-```text
+
 Tableau_Study/
 ├─ dashboards/        # Tableau .twb / .twbx 파일
 ├─ images/            # 대표 대시보드 캡처 이미지
